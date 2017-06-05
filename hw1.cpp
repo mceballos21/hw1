@@ -288,9 +288,6 @@ Shape *s = &game->box;
 
 	}
 
-
-
-
 	//box2
 	if(p->s.center.y < s->center.y + s->height &&
 		p->s.center.x > s->center.x+40 - s->width &&
@@ -313,8 +310,6 @@ Shape *s = &game->box;
 
 	}
 
-
-
 	//box3
 	if(p->s.center.y < s->center.y-110 + s->height &&
 		p->s.center.x > s->center.x+125 - s->width &&  
@@ -325,7 +320,6 @@ Shape *s = &game->box;
 	    p->velocity.y *= 0.5;
 
 	}
-
 
 	//box4
 	if(p->s.center.y < s->center.y+180 + s->height &&
@@ -338,7 +332,6 @@ Shape *s = &game->box;
 	    p->velocity.y *= 0.5;
 
 	}
-
 
 	//box5
 	if(p->s.center.y < s->center.y+280 + s->height &&
@@ -361,14 +354,6 @@ Shape *s = &game->box;
 	    p->velocity.y *= 0.5;
 
 	}
-
-
-
-
-
-
-
-
 
 	//check for off-screen
 	if (p->s.center.y < 0.0 || p-> s.center.y > WINDOW_HEIGHT) {
